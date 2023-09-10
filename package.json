@@ -2,12 +2,14 @@
 	"private": true,
 	"workspaces": [
 		"apps/*",
-		"packages/*"
+		"packages/*",
+		"server/*"
 	],
 	"scripts": {
 		"build": "turbo build --no-daemon",
 		"dev": "turbo dev --parallel",
-		"lint": "turbo lint"
+		"lint": "turbo lint",
+		"migrate": "turbo migrate"
 	},
 	"devDependencies": {
 		"eslint-config-custom": "*",
