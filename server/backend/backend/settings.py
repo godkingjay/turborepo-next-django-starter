@@ -27,9 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
-PORT = 8080
-
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -39,6 +36,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "django_cleanup.apps.CleanupConfig",
+    "test",
 ]
 
 MIDDLEWARE = [

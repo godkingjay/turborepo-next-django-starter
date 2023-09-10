@@ -10,6 +10,9 @@
 			"cache": false,
 			"persistent": true
 		},
-		"migrate": {}
+		"server": {},
+		"migrate": {},
+		"migrate:show": {},
+		"migrate:make": {}
 	}
 }

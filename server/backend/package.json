@@ -3,8 +3,10 @@
 	"version": "1.0.0",
 	"private": true,
 	"scripts": {
-		"dev": "python manage.py runserver",
+		"server": "python manage.py runserver",
 		"start": "python manage.py runserver",
-		"migrate": "python manage.py migrate"
+		"migrate": "python manage.py migrate --run-syncdb",
+		"migrate:show": "python manage.py showmigrations",
+		"migrate:make": "python manage.py makemigrations"
 	}
 }

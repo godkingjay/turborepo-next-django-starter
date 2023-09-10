@@ -7,9 +7,12 @@
 	],
 	"scripts": {
 		"build": "turbo build --no-daemon",
-		"dev": "turbo dev --parallel",
+		"dev": "turbo dev --no-daemon --parallel",
 		"lint": "turbo lint",
-		"migrate": "turbo migrate"
+		"server": "turbo server --no-daemon --parallel",
+		"migrate": "turbo migrate --no-daemon",
+		"migrate:show": "turbo migrate:show --no-daemon",
+		"migrate:make": "turbo migrate:make --no-daemon"
 	},
 	"devDependencies": {
 		"eslint-config-custom": "*",
