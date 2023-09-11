@@ -12,7 +12,13 @@
 		"server": "turbo server --no-daemon --parallel",
 		"migrate": "turbo migrate --no-daemon",
 		"migrate:show": "turbo migrate:show --no-daemon",
-		"migrate:make": "turbo migrate:make --no-daemon"
+		"migrate:make": "turbo migrate:make --no-daemon",
+		"<workspace name>": "yarn workspace <workspace name>",
+		"apps": "yarn workspace apps",
+		"web": "yarn workspace web",
+		"docs": "yarn workspace docs",
+		"types": "yarn workspace types",
+		"ui": "yarn workspace ui"
 	},
 	"devDependencies": {
 		"eslint-config-custom": "*",

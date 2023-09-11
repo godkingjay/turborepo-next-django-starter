@@ -1,25 +1,29 @@
 {
-  "name": "web",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "^13.4.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "ui": "*"
-  },
-  "devDependencies": {
-    "@types/node": "^17.0.12",
-    "@types/react": "^18.2.5",
-    "@types/react-dom": "^18.2.4",
-    "eslint-config-custom": "*",
-    "tsconfig": "*",
-    "typescript": "^4.5.3"
-  }
+	"name": "web",
+	"version": "1.0.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@emotion/react": "^11.11.1",
+		"@emotion/styled": "^11.11.0",
+		"@mui/material": "^5.14.8",
+		"next": "^13.4.1",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"types": "*",
+		"ui": "*"
+	},
+	"devDependencies": {
+		"@types/node": "^17.0.12",
+		"@types/react": "^18.2.5",
+		"@types/react-dom": "^18.2.4",
+		"eslint-config-custom": "*",
+		"tsconfig": "*",
+		"typescript": "^4.5.3"
+	}
 }
