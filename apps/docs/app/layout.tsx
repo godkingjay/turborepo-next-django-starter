@@ -1,4 +1,9 @@
+import { Metadata } from "next";
 import MuiLayout from "ui/Layout/MuiLayout";
+
+export const metadata: Metadata = {
+	title: "Documentation | SorSU - Graduate Tracer System",
+};
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
