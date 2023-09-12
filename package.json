@@ -13,6 +13,7 @@
 		"migrate": "turbo migrate --no-daemon",
 		"migrate:show": "turbo migrate:show --no-daemon",
 		"migrate:make": "turbo migrate:make --no-daemon",
+		"db:flush": "turbo db:flush --no-daemon",
 		"<workspace name>": "yarn workspace <workspace name>",
 		"web": "yarn workspace web",
 		"docs": "yarn workspace docs",

@@ -13,6 +13,7 @@
 		"server": {},
 		"migrate": {},
 		"migrate:show": {},
-		"migrate:make": {}
+		"migrate:make": {},
+		"db:flush": {}
 	}
 }
