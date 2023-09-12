@@ -14,10 +14,9 @@
 		"migrate:show": "turbo migrate:show --no-daemon",
 		"migrate:make": "turbo migrate:make --no-daemon",
 		"<workspace name>": "yarn workspace <workspace name>",
-		"apps": "yarn workspace apps",
 		"web": "yarn workspace web",
 		"docs": "yarn workspace docs",
-		"types": "yarn workspace types",
+		"shared": "yarn workspace shared",
 		"ui": "yarn workspace ui"
 	},
 	"devDependencies": {
