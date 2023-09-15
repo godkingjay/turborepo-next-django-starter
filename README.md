@@ -1,5 +1,13 @@
 # Turborepo, Next, and Django Starter with yarn
 
+This repository contains a template for creating a turborepo using Next.js and Django. A turborepo is a monorepo that uses workspaces to manage multiple projects in a single repository. This makes it easier to share code and dependencies between projects, and it also makes it easier to manage updates to multiple projects at the same time.
+
+This template includes everything you need to get started with a turborepo, including:
+- A Next.js project for the front-end
+- A Django project for the back-end
+- A turborepo configuration file
+- A README file with instructions on how to get started
+
 ## What's inside?
 
 This Turborepo template uses [yarn](https://classic.yarnpkg.com/lang/en/) as a packages manager. It includes the following packages/apps:
@@ -13,8 +21,6 @@ This Turborepo template uses [yarn](https://classic.yarnpkg.com/lang/en/) as a p
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
 - `backend`: a [Django](https://www.djangoproject.com/) app
-
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
 ### Setup
 
@@ -37,11 +43,10 @@ This Turborepo has some additional tools already setup for you:
 To build all apps and packages, run the following command:
 
 ```
-cd my-turborepo
 yarn build
 ```
 
-### Develop(Front-end)
+### Develop (Front-end)
 
 To develop all typescript apps and packages, run the following command:
 
@@ -54,7 +59,12 @@ To add packages:
 yarn <workspace> add <package-name>
 ```
 
-### Develop(Django Back-end)
+To remove packages:
+```
+yarn <workspace> remove <package-name>
+```
+
+### Develop (Django Back-end)
 
 To develop django app, run the following:
 ```
