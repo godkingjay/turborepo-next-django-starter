@@ -1,28 +1,27 @@
-# Turborepo starter with yarn
-
-This is an official starter Turborepo.
-
-## Using this example
-
-Run the following command:
-
-```sh
-npx create-turbo@latest -e with-yarn
-```
+# Turborepo, Next, and Django Starter with yarn
 
 ## What's inside?
 
-This Turborepo uses [yarn](https://classic.yarnpkg.com/lang/en/) as a packages manager. It includes the following packages/apps:
+This Turborepo template uses [yarn](https://classic.yarnpkg.com/lang/en/) as a packages manager. It includes the following packages/apps:
 
 ### Apps and Packages
 
 - `docs`: a [Next.js](https://nextjs.org/) app
 - `web`: another [Next.js](https://nextjs.org/) app
+- `shared`: a stub React component library which can be shared by all applications
 - `ui`: a stub React component library shared by both `web` and `docs` applications
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
+- `backend`: a [Django](https://www.djangoproject.com/) app
 
 Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+
+### Setup
+
+To install packages of every workspace
+```
+yarn install
+```
 
 ### Utilities
 
@@ -31,6 +30,7 @@ This Turborepo has some additional tools already setup for you:
 - [TypeScript](https://www.typescriptlang.org/) for static type checking
 - [ESLint](https://eslint.org/) for code linting
 - [Prettier](https://prettier.io) for code formatting
+- [Django](https://www.djangoproject.com/) for django
 
 ### Build
 
@@ -41,13 +41,44 @@ cd my-turborepo
 yarn build
 ```
 
-### Develop
+### Develop(Front-end)
 
-To develop all apps and packages, run the following command:
+To develop all typescript apps and packages, run the following command:
 
 ```
-cd my-turborepo
 yarn dev
+```
+
+To add packages:
+```
+yarn <workspace> add <package-name>
+```
+
+### Develop(Django Back-end)
+
+To develop django app, run the following:
+```
+yarn server
+```
+
+To make migrations:
+```
+yarn migrate:make
+```
+
+To show migrations:
+```
+yarn migrate:show
+```
+
+To apply migrations:
+```
+yarn migrate
+```
+
+To flush database:
+```
+yarn db:flush
 ```
 
 ### Remote Caching
