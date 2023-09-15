@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="Turborepo-Next-Django.png" width="100%" />
+</div>
+
 # Turborepo, Next, and Django Starter with yarn
 
 This repository contains a template for creating a turborepo using Next.js and Django. A turborepo is a monorepo that uses workspaces to manage multiple projects in a single repository. This makes it easier to share code and dependencies between projects, and it also makes it easier to manage updates to multiple projects at the same time.
