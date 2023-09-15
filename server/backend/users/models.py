@@ -5,7 +5,7 @@ from django.utils.translation import gettext_lazy as _
 
 class CustomUser(AbstractUser):
     # Add additional fields in here
-    email = models.EmailField(_("email address"), unique=True)
+    email = models.EmailField(unique=True)
 
     def __str__(self):
         return self.username
