@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "django_cleanup.apps.CleanupConfig",
     "rest_framework",
+    "users",
 ]
 
 MIDDLEWARE = [
@@ -55,7 +56,6 @@ ROOT_URLCONF = "backend.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -80,6 +80,10 @@ DATABASES = {
         "NAME": BASE_DIR / "db.sqlite3",
     }
 }
+
+# User
+AUTH_USER_MODEL = "users.CustomUser"
+AUTHENTICATION_BACKENDS = ["users.backends.EmailBackend"]
 
 
 # Password validation
