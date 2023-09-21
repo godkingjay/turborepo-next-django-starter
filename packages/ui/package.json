@@ -14,8 +14,7 @@
     "eslint-config-custom": "*",
     "react": "18.2",
     "tsconfig": "*",
-    "typescript": "^4.5.2",
-    "shared": "*"
+    "typescript": "^4.5.2"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
